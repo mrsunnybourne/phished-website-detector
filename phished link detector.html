@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("s.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+}
+
+
+
+
+
+</style>
+
+<body>
+
+<div class="bg">
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "17ebook.com") {
+        alert("Infected link.Please do not open");
+        return false;
+    }
+}
+</script>
+<form name="myForm" action="/action_page_post.php"
+onsubmit="return validateForm()" method="post">
+Name: <input type="text" link="fname">
+<input type="submit" value="Submit">
+
+
+
+</form>
+</div>
+</head>
+</body>
+</html>
